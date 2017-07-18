@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/TeX Live for SUSE Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ssws_aam_paper_v7.aux
+The style file: agu08.bst
+I found no \bibdata command---while reading file ssws_aam_paper_v7.aux
+Warning--I didn't find a database entry for "haradaetal2010"
+Warning--I didn't find a database entry for "ayarzaguenaetal2011"
+Warning--I didn't find a database entry for "Charlton2007"
+Warning--I didn't find a database entry for "salsteinrosen1989"
+Warning--I didn't find a database entry for "eubanksetal1985"
+Warning--I didn't find a database entry for "rosenetal1991"
+Warning--I didn't find a database entry for "Rosen1983"
+Warning--I didn't find a database entry for "dobslawetal2010"
+Warning--I didn't find a database entry for "hideetal1997"
+Warning--I didn't find a database entry for "chao_au1991"
+Warning--I didn't find a database entry for "nastulaetal2009"
+Warning--I didn't find a database entry for "rosensalstein1985"
+Warning--I didn't find a database entry for "zhouetal2008"
+Warning--I didn't find a database entry for "baldwindunkerton2001"
+Warning--I didn't find a database entry for "thompsonetal2002"
+Warning--I didn't find a database entry for "woollingsetal2010"
+Warning--I didn't find a database entry for "quiroz1986"
+Warning--I didn't find a database entry for "martiusetal2009"
+Warning--I didn't find a database entry for "Garfinkel2010"
+Warning--I didn't find a database entry for "kodera2006"
+Warning--I didn't find a database entry for "koderaetal2011"
+Warning--I didn't find a database entry for "barnesetal1983"
+Warning--I didn't find a database entry for "Gross1992"
+Warning--I didn't find a database entry for "Rosen1990"
+Warning--I didn't find a database entry for "Eubanks1988"
+Warning--I didn't find a database entry for "gross2009"
+Warning--I didn't find a database entry for "uppalaetal2005"
+Warning--I didn't find a database entry for "deeetal2011"
+Warning--I didn't find a database entry for "labitzkenaujokat2000"
+Warning--I didn't find a database entry for "bancalaetal2012"
+Warning--I didn't find a database entry for "wilks1995"
+Warning--I didn't find a database entry for "Garfinkel2008"
+Warning--I didn't find a database entry for "wunschstammer1997"
+Warning--I didn't find a database entry for "Mitchell2012"
+Warning--I didn't find a database entry for "Barriopedro2014"
+Warning--I didn't find a database entry for "Haigh2005"
+Warning--I didn't find a database entry for "Kodera2013"
+Warning--I didn't find a database entry for "mitchelletal2013"
+Warning--I didn't find a database entry for "Egger2007"
+Warning--I didn't find a database entry for "labitzkenaujokat2009"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 0 entries,
+            3145 wiz_defined-function locations,
+            1121 strings with 10003 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 1
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 1
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 7
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 6
+(There was 1 error message)

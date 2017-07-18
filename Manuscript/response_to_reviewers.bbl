@@ -1,0 +1,50 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Blume et~al.(2012)Blume, Matthes, and Horenko]{blumeetal2012}
+Christian Blume, Katja Matthes, and Illia Horenko.
+\newblock Supervised learning approaches to classify sudden stratospheric
+  warming events.
+\newblock \emph{J. Atmos. Sci.}, 2012.
+\newblock \doi{10.1175/JAS-D-11-0194.1}.
+\newblock in press.
+
+\bibitem[Charlton and Polvani(2007)]{Charlton2007}
+Andrew~J. Charlton and Lorenzo~M. Polvani.
+\newblock A new look at stratospheric sudden warmings. {Part I}: {Climatology}
+  and modeling benchmarks.
+\newblock \emph{J. Clim.}, 20:\penalty0 449--469, 2007.
+
+\bibitem[Garfinkel et~al.(2010)Garfinkel, Hartmann, and Sassi]{Garfinkel2010}
+Chaim~I. Garfinkel, Dennis~L. Hartmann, and Fabrizio Sassi.
+\newblock {Tropospheric Precursors of Anomalous Northern Hemisphere
+  Stratospheric Polar Vortices}.
+\newblock \emph{Journal of Climate}, 23\penalty0 (12):\penalty0 3282--3299,
+  June 2010.
+\newblock ISSN 0894-8755.
+\newblock \doi{10.1175/2010JCLI3010.1}.
+
+\bibitem[Hansen et~al.(2013)Hansen, Matthes, and Gray]{Hansen2013}
+F.~Hansen, K.~Matthes, and L.~J. Gray.
+\newblock {Sensitivity of stratospheric dynamics and chemistry to QBO nudging
+  width in the chemistry-climate model WACCM}.
+\newblock \emph{Journal of Geophysical Research: Atmospheres}, 118:\penalty0
+  10464--10474, September 2013.
+\newblock ISSN 2169897X.
+\newblock \doi{10.1002/jgrd.50812}.
+
+\bibitem[Mitchell et~al.(2012)Mitchell, Gray, Anstey, Baldwin, and
+  Charlton-Perez]{Mitchell2012}
+Daniel~M. Mitchell, Lesley~J. Gray, James Anstey, Mark~P. Baldwin, and
+  Andrew~J. Charlton-Perez.
+\newblock The influence of stratospheric vortex displacements and splits on
+  surface climate.
+\newblock \emph{Journal of Climate}, 26:\penalty0 2668--2682, October 2012.
+\newblock ISSN 0894-8755.
+\newblock \doi{10.1175/JCLI-D-12-00030.1}.
+
+\end{thebibliography}

@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[draft,jgrga]{agutex}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Response to Reviewers  (Second Round)}
+\author{}
+
+
+% packages
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage[usenames]{color}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{lscape}
+\usepackage{epstopdf}
+\usepackage{natbib}
+
+% colors
+\definecolor{misc2}{RGB}{27,158,119}
+\definecolor{misc1}{RGB}{217,95,2}
+\definecolor{reviewer}{RGB}{117,112,179}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+
+
+\begin{document}
+%\bibliographystyle{agu08}
+\bibliographystyle{plainnat}
+
+
+\maketitle
+
+
+
+
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 1}
+\label{sec:R1}
+
+
+\textcolor{reviewer}{The legend of Figure 3 notes 4 rows in the figure, but there are only 3. I think the third part of the legend should be removed, and the fourth part become a third part. }
+\vspace{0.5cm}
+
+This is correct; we have made the change.
+\vspace{0.5cm}
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 2}
+\label{sec:R2}
+
+
+
+\textcolor{reviewer}{50: "components of AAM the orientation"...is there a word missing here?}
+\vspace{0.5cm}
+
+We have added the word ``change'' to make the sentence more clear.  
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{Paragraph at 83: is not mentioning Section 3 intentional? Fine if so.}
+\vspace{0.5cm}
+
+We omitted this by accident; we've now corrected the text to make sure the outline mentions all sections.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{306: "shows a such strong"}
+\vspace{0.5cm}
+
+We have made the correction.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{348: "As both of surface pressure patterns contribute"}
+\vspace{0.5cm}
+
+We have made the correction.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{375-376: this sentence is quite confusing, especially "westerly wind anomalies that might precede SSWs tropical troposphere"}
+\vspace{0.5cm}
+
+We have modified broken the sentence up into two sentences and modified the wording to make it more clear.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{Figure 4: the caption appears to refer to 4 different rows of plots}
+\vspace{0.5cm}
+
+We have corrected the caption and removed the erroneous reference to a non-existant row of plots.
+We have made the correction.
+\vspace{0.5cm}
+
+
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 3}
+\label{sec:R3}
+
+\textcolor{reviewer}{First, the author’s included several ‘review only’ figures and I am concerned about the
+accuracy of either their data or their methods. Specifically, figures 2 and 4 have some
+very peculiar characteristics. All of the lines plotted prior to and including 1981 are very
+smooth, while the lines plotted beyond 1981 are very noisy. At first I was thinking that
+this might have to do with the switching of the data sets, but the author’s state that ERA-
+Interim is used beyond 1979, so this clearly can’t be the reason for the discrepancy.
+Given the very different appearance of the data, I am concerned that the other results –
+including Figure 2 – may be inaccurate. Can the author’s please clarify what is going on
+here?}
+
+\textcolor{reviewer}{Second, given my comments above about the timing and strength of the PM2 signals
+shown for split versus displacement SSWs (see the end of my General Comments section above),
+I think it would be appropriate for the author’s to briefly note in the text that there
+are some differences between split and displacement warmings and that their results do
+seem to depend on the criteria used for picking warming events (i.e. the Charlton/Polvani
+versus Mitchell et al. criteria). Its fine if the author’s want to point out in their manuscript
+that they have not explored this avenue because of the small sample size, but I think that
+they need to make readers aware that there are indeed potential differences between splits
+and displacements. Perhaps the author’s can add something to their text either near lines
+383 or 275.}
+
+
+
+\end{document}
+

@@ -1,0 +1,61 @@
+% A summary of my results "so far" for the DART people in Boulder, March 9, 2012.
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.4in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{natbib}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{pdflscape}
+
+\title{Comparison of Composite ERPs and AAM Excitation Functions}
+
+\date{\today}   
+%% ------------------------------------------------------------------------ %%
+%
+%  MATH ABBREVIATSIONS
+%
+%% ------------------------------------------------------------------------ %%
+\newcommand{\dlod}{{\Delta \text{LOD}}}
+\newcommand{\peq}{{p}_{\text{eq}}}
+\newcommand{\chieq}{{\chi}_{\text{eq}}}
+\newcommand{\xm}{\chi^{\text{M}}}
+\newcommand{\xw}{\chi^{\text{W}}}
+\newcommand{\degN}{^{o}\text{N}}
+\newcommand{\degS}{^{o}\text{S}}
+\newcommand{\kgmsq}{\text{kgm}^{2}}
+\newcommand{\dlodw}{\Delta \text{LOD}^{\text{W}}}
+\newcommand{\dlodm}{\Delta \text{LOD}^{\text{M}}}
+
+\begin{document}
+\maketitle   
+
+\bibliographystyle{plainnat}
+
+% (0) Observations
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_obs_m_compare_subsets.png}
+  \caption{Composites of observed PM1 (black) and the mass excitation function $\xm_1$ (yellow).  Each panel shows composites over different subsets of SSW events. For each curve, the solid line represents the mean and the shading the 98 $\%$ bootstrap confidence interval.}
+   \label{fig:all_events}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_obs_m_compare_subsets.png}
+  \caption{Composites of observed PM2 (black) and the mass excitation function $\xm_2$ (yellow).  Each panel shows composites over different subsets of SSW events. For each curve, the solid line represents the mean and the shading the 98 $\%$ bootstrap confidence interval.}
+   \label{fig:all_events}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_obs_w_compare_subsets.png}
+  \caption{Composites of observed $\dlod$ (black) and the wind excitation function $\xm_1$ (blue).  Each panel shows composites over different subsets of SSW events. For each curve, the solid line represents the mean and the shading the 98 $\%$ bootstrap confidence interval.}
+   \label{fig:all_events}
+ \end{figure}
+
+
+
+\end{document}  

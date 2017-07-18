@@ -1,0 +1,241 @@
+% A summary of my results "so far" for the DART people in Boulder, March 9, 2012.
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.4in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{natbib}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{pdflscape}
+
+\title{Comparison of Composite AAM Excitation Functions}
+
+\date{\today}   
+%% ------------------------------------------------------------------------ %%
+%
+%  MATH ABBREVIATSIONS
+%
+%% ------------------------------------------------------------------------ %%
+\newcommand{\dlod}{{\Delta \text{LOD}}}
+\newcommand{\peq}{{p}_{\text{eq}}}
+\newcommand{\chieq}{{\chi}_{\text{eq}}}
+\newcommand{\xm}{\chi^{\text{M}}}
+\newcommand{\xw}{\chi^{\text{W}}}
+\newcommand{\degN}{^{o}\text{N}}
+\newcommand{\degS}{^{o}\text{S}}
+\newcommand{\kgmsq}{\text{kgm}^{2}}
+\newcommand{\dlodw}{\Delta \text{LOD}^{\text{W}}}
+\newcommand{\dlodm}{\Delta \text{LOD}^{\text{M}}}
+
+\begin{document}
+\maketitle   
+
+\noindent \textbf{Some notes on the following plots:}
+
+\begin{enumerate}
+\item Selection of downward-propagating events from \citet{nakagawayamazaki2006}:  Events where the mean 30-day (after the central date) anomaly of 500hPa polar temperature is positive are called ``troposphere warm'' events (there are 14).  The rest are called ``troposphere cold'' events (there are 8).
+%
+\item Selection of downward-propagating events by Sophia: Events where the wind anomaly at 50hPa and 60N exceeds -15 m/s are called "strong events" (there are 10).  Events where the wind anomaly exceeds -20 m/s are called "stronger events" (there are 6).  
+\end{enumerate}
+
+
+\bibliographystyle{plainnat}
+
+
+
+% (0) All SSW Events
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_all_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_all_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_all_events.png}
+  \caption{Composites of the six AEFs, over all SSW events.}
+   \label{fig:all_events}
+ \end{figure}
+
+% (1) Vortex-displacement events only
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_displ_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_displ_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_displ_events.png}
+  \caption{Composites of the six AEFs, over the 12 vortex-displacement events.}
+   \label{fig:displ_events}
+ \end{figure}
+
+% (2) Vortex-split events only
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_split_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_split_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_split_events.png}
+  \caption{Composites of the six AEFs, over the 10 vortex-split events.}
+   \label{fig:split_events}
+ \end{figure}
+
+% (3) Events where the u-anomaly at 50hPa is lower than -15 m/s
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_uanom_-15ms_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_uanom_-15ms_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_uanom_-15ms_events.png}
+  \caption{Composites of the six AEFs, over the 10 events where the 50hPa (60N) u-anomaly is below -15 m/s.}
+   \label{fig:uanom_events_1}
+ \end{figure}
+
+% (4) Events where the u-anomaly at 50hPa is lower than -20 m/s
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_uanom_-20ms_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_uanom_-20ms_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_uanom_-20ms_events.png}
+  \caption{Composites of the six AEFs, over the 10 events where the 50hPa (60N) u-anomaly is below -20 m/s.}
+   \label{fig:uanom_events_2}
+ \end{figure}
+
+% (5) Events classified as "troposphere warm" according to Nakagawa & Yamazaki (2006)
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_Nakagawa_strong_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_Nakagawa_strong_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_Nakagawa_strong_events.png}
+  \caption{Composites of the six AEFs, over the 14 events classified as ``troposphere warm'' events according to the criterion of \citet{nakagawayamazaki2006}.}
+   \label{fig:nakagawa_strong}
+ \end{figure}
+
+% (6) Events classified as "superstrong" according to Sophia, using the Nakagawa & Yamazaki (2006)
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_Nakagawa_weak_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_Nakagawa_weak_events.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_Nakagawa_weak_events.png}
+  \caption{Composites of the six AEFs, over the 8 events classified as ``troposphere cold'' events according to the criterion of \citet{nakagawayamazaki2006}.}
+   \label{fig:nakagawa_weak}
+ \end{figure}
+
+% (7) comparison of all composite subsets for $\chi_1$.
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_obs_compare_subsets.png}
+  \caption{Composites of observed $p_1$, for each of the 7 SSW subsets.}
+   \label{fig:X1_obs_subsets}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1m_compare_subsets.png}
+  \caption{Composites of observed $p_1$ and the $\chi_1$ mass term, for each of the 7 SSW subsets.}
+   \label{fig:X1_m_subsets}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1_obs_m_compare_subsets.png}
+  \caption{Composites of the $\chi_1$ mass term, for each of the 7 SSW subsets.}
+   \label{fig:X1_obs_m_subsets}
+ \end{figure}
+
+
+% (8) comparison of all composite subsets for $\chi_2$.
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_obs_compare_subsets.png}
+  \caption{Composites of observed $p_2$, for each of the 7 SSW subsets.}
+   \label{fig:X2_obs_subsets}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2m_compare_subsets.png}
+  \caption{Composites of  the $\chi_2$ mass term, for each of the 7 SSW subsets.}
+   \label{fig:X2_m_subsets}
+ \end{figure}
+
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X2_obs_m_compare_subsets.png}
+  \caption{Composites of observed $p_2$ and the $\chi_2$ wind term, for each of the 7 SSW subsets.}
+   \label{fig:X2_obs_m_subsets}
+ \end{figure}
+
+
+% (9) comparison of all composite subsets for $\chi_3$.
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_obs_compare_subsets.png}
+  \caption{Composites of observed $\dlod$, for each of the 7 SSW subsets.}
+   \label{fig:X3_obs_subsets}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3w_compare_subsets.png}
+  \caption{Composites of  the $\chi_3$ wind term, for each of the 7 SSW subsets.}
+   \label{fig:X3_w_subsets}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3_obs_w_compare_subsets.png}
+  \caption{Composites of observed $\dlod$ and the $\chi_3$ wind term, for each of the 7 SSW subsets.}
+   \label{fig:X3_obs_w_subsets}
+ \end{figure}
+
+% (10) comparing the composite wind-anomalies over lat and time
+\begin{landscape}
+
+% (11) comparing wind anomalies in the different subsets
+\begin{figure}
+  \noindent
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositmajor.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositsplit.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_composit15-stark.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositstrong-nakagawa.png} \\
+  %
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositmajor.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositdisplacement.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_windanom_tempdiffanom_composit15-schwach.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60anom_tempdiffanom_compositweak-nakagawa.png} \\
+  \caption{Composites of wind and and temperature anomalies over the different SSW subsets.}
+   \label{fig:compare_windanom_composites}
+ \end{figure}
+
+% (12) comparing wind and temperature in the different subsets
+\begin{figure}
+  \noindent
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositmajor.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositsplit.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_composit15-strong.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositstrong-nakagawa.png} \\
+  %
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositmajor.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositdisplacement.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_composit15-weak.png}
+  \includegraphics[width=0.35\textwidth]{/home/ig/neef/Documents/Plots/Sophia/time_lev_wind60_tempdiff_compositweak-nakagawa.png} \\
+  \caption{Composites of wind and and temperature over the different SSW subsets.}
+  \label{fig:compare_wind_composites}
+ \end{figure}
+
+\end{landscape}
+
+% (13) comparing regional contributions to the AEFs
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1m_compare_regions.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X1m_compare_regions.png}
+  \includegraphics[width=\textwidth]{/home/ig/neef/Documents/Plots/SSW_AAM/composite_X3w_compare_regions.png}
+  %
+  \caption{Composites of the dominant terms of each AEF, comparing integrationover the tropics only (center), and the NHET only (right).}
+ \label{fig:compare_regions}
+\end{figure}
+
+
+
+
+\bibliography{ssw}
+
+\end{document}  

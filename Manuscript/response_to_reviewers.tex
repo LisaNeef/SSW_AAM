@@ -1,0 +1,591 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[draft,jgrga]{agutex}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Response to Reviewers}
+\author{}
+
+
+% packages
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage[usenames]{color}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{lscape}
+\usepackage{epstopdf}
+\usepackage{natbib}
+
+% colors
+\definecolor{misc2}{RGB}{27,158,119}
+\definecolor{misc1}{RGB}{217,95,2}
+\definecolor{reviewer}{RGB}{117,112,179}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+
+
+\begin{document}
+%\bibliographystyle{agu08}
+\bibliographystyle{plainnat}
+
+
+\maketitle
+
+
+
+
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 1}
+\label{sec:R1}
+
+We appreciate your thorough reading of our manuscript, especially in regards to the material on Earth rotation parameters.
+Below are our responses to individual comments, omitting trivial typographical and grammatical corrections, which are highlighted in the revised manuscript.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{1. The mechanism relating the tropical zonal winds, and hence the LOD changes, to the SSWs and the polar changes is not so clear to me.}
+\vspace{0.5cm}
+
+We have revised this section by removing the (unclear) separation of events by QBO phase and making the text more clear.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{2. More information as to other effects related to QBO phase that may be related to the zonal winds should be included. The motivation for thinking about separating by QBO phase is not strong enough.}
+\vspace{0.5cm}
+
+
+We agree that the motivation for separating by QBO phase is not strong, and in fact found that there is even less reason to separate by QBO phase once the effect of the QBO itself on LOD is removed (see comment in Section \ref{sec:overview}).  We have removed the distinction by QBO phase from the manuscript and instead focused on the effect of SSWs on tropical winds, as obseved in the LOD anomaly.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{3. One issue though I see is using the geodetic Earth rotation/polar signals as precursors to a SSW. If precursors do exist, wouldn't the excitation signals, such as the alternating continental patterns that are discussed, be more fundamental?}
+\vspace{0.5cm}
+
+\citet{Garfinkel2010} showed that the global surface pressure patterns that cause the excitation anomalies that we find to precede SSWs (a North American low and a Eurasian high) \textit{are} fundamental, in the sense that pressure anomalies preceding SSW events tend to (but don't have to) project onto this pattern.
+We have edited the discussion of the surface pressure anomalies and equatorial AAM excitation (Section 4.2) to draw a more clear connection between the observed surface signals that commonly precede SSWs, and the polar motion signal found in our study.  
+We have also added a more thorough discussion of the potential for polar motion to serve as an observable precursor of SSW events, including two figures that illustrate what the observed $\chi_2$ anomaly looks like in the context of other subseasonal polar motion variations, to the conclusion section.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{4. The polar motion excitations are forced by wavenumber-1, which is clear in Fig. 4(e), but some of the power in the eddy terms are in wavenumber-2, like in Fig. 4(a)-(c), which I think is harder to relate to the polar motion. Can you comment on the two?}
+\vspace{0.5cm}
+
+The wave structure was different in the top and bottom panels of this figure because in the first row we plotted deviations of geopotential from the zonal mean value, whereas in the bottom panels we showed (zonal mean) deviations from the daily climatology.  
+In order to relate the different panels better to one another and to polar motion, we have changed the top panels of Fig. 4 to instead show the zonal mean geopotential height.
+For increased clarity, we have also removed the row where pressure anomalies are weighted to $\chi_1$.
+
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{l.156 - why is sidereal day used? The more common output from the IERS and the services is solar day. Are the constants then in equations (8) and (9) correct?}
+\vspace{0.5cm}
+
+Indeed, LOD$_0$ should be the nominal length of day (86400s), rather than the sidereal day (86160s) [Gross, 2009]. The fact that we used the sidereal day doesn't affect the constants in equations (8) and (9), since these constants come from Earth deformation considerations. The difference comes in when we map the nondimensional axial AAM from the reanalyis data into equivalent length-of-day anomalies, which is done in Fig. 5.  We have made this revision in the code and replotted the figure.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{l. 175. I think wave-2 should be wave-1. There is one wave around the globe at each latitude for excitation of both chi1 and chi2-and the two differ by 90 degrees of phase. For example the continents in excitations of chi2 are important amplifying strong positive and negative anomalies 180 degrees apart from each other. But this is at wavenumber 1. See point 4 above.}
+\vspace{0.5cm}
+
+We agree, and have made the change.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{After l. 219: I wouldn't call this section "Role of Ocean Angular Momentum," because it only talks about the inverse barometer effect, which is really just the part of the ocean angular momentum coming from the mass displacement of the ocean responding to the overlying atmospheric pressure. Ocean angular momentum now more commonly includes the full relative momentum from currents, as is calculated in some ocean models, but which are not considered here. The section title could be "Inverse Barometer response of the ocean." Actually I prefer "Inverted barometer" to "Inverse barometer."}
+\vspace{0.5cm}
+
+We agree, and have changed the title of this section to ``Inverted Barometer Response of the Ocean''.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{l. 292 the QBO effect mentioned by Chao, and others relates to the qb signal in LOD, and not to the stratifying effect of QBO phase on LOD.}
+\vspace{0.5cm}
+
+Indeed, the Chao paper only talks about a QBO-related peak in LOD variations, but doesn't connect the phase (the definition of which is a little bit arbitrary) to the sign of LOD.  We have removed this reference..
+\vspace{0.5cm}
+
+
+
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 2}
+
+
+\noindent \textcolor{reviewer}{(1) Combined datasets \\
+Joining two reanalysis datasets, even ones produced at the same data center, is not proper. While some of the backbone of the modeling and methods are shared between the datasets, they are different and independent. The two datasets should be considered separately and compared in Section 5 (and Figure 2). If ERA40 surface pressures were readily available for the analysis of Section 4, the same should be done there. Separate considerations of datasets can, in a way, be considered a Monte Carlo method to check that the results are robust. While the overall sample sizes are small, there is a fairly even distribution between the two datasets. ERA40 goes to 2002, so 14 additional events (11 with QBO signals) from Table 1 can be added to analysis with that dataset. This gives 26 (22) events in ERA40 and 22 events in ERA-Interim (26 and 18, respectively, for those with definitive QBO signals). If the qualitative nature of the results hold across both sets of analyses (and I expect that
+they do), then there should be no problem showing only one of them and stating that the other is in agreement.}
+\vspace{0.5cm}
+
+We agree that there are many difficulties and potential errors associated with combining two reanalysis datasets.
+In our study, the biggest caveats about joining the datasets are (1) that ERA-Interim and ERA-40 have different accuracy in the tropics, which are focused on in Section 5, and (2) that the Earth rotation data have much larger errors in the pre-satellite era (i.e. pre-1980).  Potential jumps where the data are joined (1 April 1979) are not important in this study since the join happens over after the 1979 warming and our study focuses almost entirely on on the period before the central date to about 15 days after the central date.  
+
+We have tested whether our overall results hold up when ERA-40 and ERA-Interim are considered separately and found that both the $\chi_2$ and $\Delta$LOD anomalies remain if only the individual datasets are considered.
+This is shown in Figure \ref{fig:summary_plotstack_datasets}, which compares the wind and temperature anomalies, as well as the ERP anomalies, composited over ERA-40, ERA-Interim, and the joint dataset.
+
+For the ERA-40 data (center column) we have only composited for the events between 1963 and 1980, because this also allows us to see whether the ERP signals can still be seen in data from the pre-satellite era.
+It can be seen that, while the pre-1980 ERA-Interim events have a much larger error, both the $\chi_2$ and the $\Delta$LOD anomalies appear in the composite.
+
+The main benefit to joining the datasets is a larger sample size over which to form the composites.  
+Joining the datasets is not completely unprecedented and was done, for example, by \cite{blumeetal2012}.
+The 96\% confidence interval becomes smaller when we composite over the joint dataset, but the main results don't change much from compositing only over one dataset.
+Thus, in the interest of better statistics, we have decided to retain the joined dataset in the computation of the ERP anomalies (Fig. 2 in the manuscript), the $\chi_3$ excitation function composites by latitude (Fig. 5 in the manuscript), and the computation of tropical wind anomalies (Figs. 6 in the revised manuscript).  
+
+\vspace{0.5cm}
+
+\begin{figure}
+  \noindent
+  \includegraphics[width=0.3\textwidth]{../Plots/SSW_AAM/allevents_plotstack.pdf}
+  \includegraphics[width=0.3\textwidth]{../Plots/SSW_AAM/era40_plotstack.pdf}
+  \includegraphics[width=0.3\textwidth]{../Plots/SSW_AAM/erainterim_plotstack.pdf}
+   \caption{Comparison of the polar-cap temperature anomalies, 60N zonal wind anomalies, and Earth rotation parameter anomalies, composited over three sets of SSW events: (left) all events in the joint ERA-40/ERA-Interim dataset, (center) ERA-40 events up to 1979, and (right) ERA-Interim events only.}
+   \label{fig:summary_plotstack_datasets}
+ \end{figure}
+
+
+\noindent \textcolor{reviewer}{2) Predictability of SSWs  \\
+The authors suggest that the composited signals in ERPs could potentially be used as a prediction parameter for SSWs. The efficacy of the parameters to this end is not immediately obvious and not explored in this study however. Suggestion of its usefulness in prediction should carry some evidence. A simple algorithm which identifies the observed pre-SSW signals in p2 and LOD (based on some selected criteria) anywhere within the ERP dataset could be utilized. If these signals are indeed robust predictors of SSWs, then the algorithm should be able to hindcast SSWs well. If it instead identifies numerous points in time which are associated with SSWs, prediction using these ERP signals may not be efficacious.}
+\vspace{0.5cm}
+
+We have added two figures to the discussion section (Section 6) that explore how the observed polar motion anomalies look in the greater context of subseasonal polar motion, and what this means for the efficacy of $\chi_2$ as a predictive parameter.
+Here we can see that deep negative $\chi_2$ anomalies are precursors of SSWs in the same way that the geopotential patterns identified by \citet{Garfinkel2010} are: they often precede SSWs, but not always, and they can happen without a following SSW event. 
+Thus a strong $\chi_2$ anomaly is not a steadfast harbinger of an SSW to come, but it does contribute to the overall picture that might suggest that an SSW is likely, simply by virtue of being an observable function of the integrated surface pressure field.
+We hope that our revised discussion in Section 6 makes this more clear.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(1) The readers who will take interest in this work will likely not be familiar with the Earth rotation parameters that are analyzed here. While length of day should be an understandable field, the polar motion angles are not intuitive. Is there a brief way of describing what these physically represent? It would help to give a better physical understanding of the results.}
+\vspace{0.5cm}
+
+We have modified the description of the ERP observations (Section 2.1) and moved the description of the atmospheric excitation functions to immediately follow the discussion of the ERPs (i.e. it is now Section 2.2).
+We have added some discussion, hopefuly  clearly, of how the polar motion observations are made with respect to a celestial reference frame, and where the relation to the exctiation functions comes from.  
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{(2) In equations (1)-(3), do the overdots represent time derivatives?}
+\vspace{0.5cm}
+
+Yes, we have pointed this out in the revised text.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(3) Where is the change in length of day statistically significant? The only time it seems significant (i.e. the confidence interval does not include 0) in Figure 2 (e) is at the central date and perhaps two additional days. If this is the case, then it would be good to clarify in the text what part of the LOD behavior is significant. Without carefully analyzing the figure, the text makes it seem that more of the LOD behavior is statistically significant.}
+\vspace{0.5cm}
+
+Indeed, the LOD anomaly is only statistically significant for a few days around the central date.
+We have changed the text to make this more clear.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(4) Is there perhaps a better color combination for the colored curves in Figure 3? The blue and green are quite similar, making it hard (for my eyes) to distinguish between the two curves.}
+\vspace{0.5cm}
+
+We have updated the figure to make the two curves easier to distinguish.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(5) (Line 221) Should this reference $\chi_1^M$ and $\chi_2^M$?}
+\vspace{0.5cm}
+
+Yes; there was a typo in the original manuscript that we have now corrected.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(6) (Lines 227-237) Am I correct in understanding that you globally averaged sea surface pressure and subsequently calculated the excitation functions (4) \& (6)? This could be better explained so the reader isn't lost on methodology.}
+\vspace{0.5cm}
+
+Yes, the ``inverted barometer'' approximation simply means that surface pressure over all sea areas is averaged. 
+We have changed the text to make this more clear.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(7) (Line 256) I think this line should read that the surface pressure anomalies are high over Eurasia.}
+\vspace{0.5cm}
+
+Yes; we have made the change.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(8) (Lines 264-265) Are these subplot references correct?}
+\vspace{0.5cm}
+
+We have changed the subplot references after redrawing the figure.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{(9) In Figure 4, why is $\chi_2$ negative over Eurasia? If I calculate sine of longitude, then it should maximize at 90 degrees, which is near the Eurasian maximum. As the cosine terms are positive in the Northern Hemisphere, this should mean $\chi_2$ is positive over Eurasia. Are these terms carrying the negative from equations (4) and (6)? Also, the $\chi$ labels in (j)-(l) seem incorrect.}
+\vspace{0.5cm}
+
+Indeed; we included the negative prefactor in the figure in order to make the connection to the net excitation function more clear.
+We have altered the text to make this clear.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(10) (Lines 266-268) I'm not sure I follow. Are you saying that the anomalies which go into the calculation of $\chi_1$ are mostly canceled out due to the inverse barometer modeling?}
+\vspace{0.5cm}
+
+Yes.  We have edited the text in Section 4 to make the differences between $\chi_1$ and $\chi_2$, and the role of the inverted barometer effect, more clear.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{(11) (Lines 283-285) What is/are the reason(s) for these QBO criteria? I'm not arguing the definition, but would like to see some clarity as to why (reference or physical explanation).}
+\vspace{0.5cm}
+
+Our criteria for determining the QBO phase were based on the recent paper by \citet{Hansen2013}, but this is no longer relevant as we have removed the separation by QBO phase from the paper.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(12) (Line 301) Figure 5 uses a "T" for the Tropics, while the text uses "ST."}
+\vspace{0.5cm}
+
+We have made the correction.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{(13) In Figure 5, how much of the Tropical region's contribution in (c)-(d) is due to it being a much larger amount of the atmosphere than any of the other sections? Do the results significantly change if the latitude bands of the areas are changed? It seems like the Tropics are being overly weighted for this figure.}
+\vspace{0.5cm}
+
+It is true that the tropical band considered here constitutes a much larger region of the atmosphere. 
+However, this doesn't change the result that this band, however large, is the source of the angular momentum changes that are observed, on average, during SSW events. 
+In other words, it is not surprising that the tropical band dominates the global angular momentum, but it is at least somewhat surprising that the tropical band shows a signficant angular momentum anomaly during SSWs.  
+We have tried to make this more clear in the revised manuscript.
+\vspace{0.5cm}
+
+\noindent \textcolor{reviewer}{(14) (Line 352) There's an incorrect figure reference here.}
+\vspace{0.5cm}
+
+We have made the correction.
+\vspace{0.5cm}
+
+
+\noindent \textcolor{reviewer}{(15) There are a number of spelling and grammatical errors throughout the body of the text.}
+\vspace{0.5cm}
+
+We have made the corrections where necessary.  
+
+
+
+%-------------------------------------------------------------------------
+\section{Response to Comments by Reviewer 3}
+
+
+\textcolor{reviewer}{This paper attempts to document how the Earth’s rotational parameters vary in the
+months and days before and after SSWs. Let me first say that as a concept, I very much
+like the idea of using variations in angular momentum as a way to view the evolution of
+SSW behavior. However, I have some major reservations about (1) how the composites
+are constructed, and (2) the relatively minimal level of physical analysis that is discussed
+given the results.}
+
+\textcolor{reviewer}{That said, I think that there is potential for your paper to provide a set of insightful and
+useful results. Despite 30+ years of research on SSWs, relatively little is known about the
+precise necessary conditions that need to occur in order to trigger a warming. In fact
+despite what is repeatedly stated in the literature, having enough tropospheric wave
+forcing is certainly not a sufficient condition for triggering a warming. To the contrary,
+there remains a substantial amount of work to be done in order to understand exactly
+what conditions are sufficient to trigger a warming. In particular, the fact that
+displacement versus split SSWs have very distinct evolution morphologies provides one
+promising direction for determining why each type of warming is triggered. Your paper
+can positively contribute to this process, but I think that some additional work needs to be
+done to make that happen.}
+
+\textcolor{reviewer}{My biggest concern with this paper is in the design of the SSW event composites. In my
+view, combining both displacement and split type SSWs into one composite creates two
+potentially serious problems with your results. And these two problems in turn
+complicate the possibility of providing meaningful commentary on the physical
+interpretation of the evolution of the Earth’s angular momentum budget and rotational
+parameters.}
+
+\textcolor{reviewer}{First off, combining all SSWs into one composite would only make sense if all of the
+SSWs in the composite have a similar angular momentum life cycle. This is clearly not
+the case when comparing the mass and angular velocity evolutions for a displacement
+versus a split SSW. In fact you have made this point in your current draft when you state
+that: “...only zonally asymmetric wind and mass anomalies result in net polar motion
+excitation” (Lines 203-204). Indeed if you consider the time evolution of split versus
+displacement SSWs, then you will notice many differences in their mass and angular
+velocity evolutions. For example, in the days leading up to a displacement SSW, the
+vortex is anomalously weak, yet it remains largely cone shaped with a broad area in the
+upper stratosphere and smaller area in the lower stratosphere. In contrast, split SSWs
+display a prewarming evolution where the vortex core is anomalously strong but gets
+eroded in the upper stratosphere to the point that it is very tightly confined about the pole
+and is largely barotropic in vertical structure. Thus the split vortex evolution follows the
+original preconditioning ideas of Labitzke and McIntyre, while displacement SSWs do
+not follow the preconditioning or edge sharpening/wave guiding paradigm. As a result,
+the prewarming vortex evolutions of split versus displacement SSWs have very different
+geographic mass distributions (i.e. size of the prewarming vortex) and very different
+angular velocity distributions (i.e. anomalously weak versus strong vortex core).
+Moreover, split versus displacement SSWs have very different nonzonal signatures once
+the warming has occurred (two daughter vortices located at very low latitudes versus one
+single vortex at a particular latitude and longitude). Thus to put it mildly, the two types of
+vortex evolutions and SSWs should represent very different mass and angular velocity
+evolutions. Not only does this fact make your results very hard to interpret physically (a
+point I will get to later in this review), but in addition, it means that compositing all
+SSWs into one time series could produce very misleading results. In fact this point leads
+me to my second concern.}
+
+\textcolor{reviewer}{My guess is that the rotational parameters that you are trying to interpret do not have
+nearly the signal-to-noise ratio that say the zonal-mean wind or temperature have during
+a SSW. This of course does not mean that there will not be a signal there worth
+considering; rather it simply means that you must be extremely careful when building
+your composites. The fact that you are mixing split and displacement SSWs into one
+composite means that you will certainly be ‘smearing’ away many of the important and
+salient details that are specific to each type of warming. My guess is that if you divide the
+SSWs by type, then you will have a much cleaner signal to interpret. And if you can’t get
+a strong signal for each type of warming, then perhaps that is a clue that rotational
+parameters are not a robust measure of SSW evolution.}
+
+
+\textcolor{reviewer}{With the above in mind, it would be my strong recommendation that you reproduce your
+results where SSWs are composited separately for split and displacement SSWs. I realize
+that this is a fair amount of work, but I think that it will likely be the difference between a
+paper that provides useful physical insight versus a paper that simply outlines how the
+rotational parameters evolve.
+Finally, your paper goes to great lengths to document how the rotational parameters vary
+during the SSW life cycle, yet there is a very limited amount of physical analysis and
+interpretation. In order for this paper to be a truly insightful contribution to the literature,
+you really need to spend some time trying to understand how your results provide
+meaningful physical insight into the warming life cycle. This is certainly a difficult task,
+but is also very necessary.}
+
+
+\vspace{0.5cm}
+
+We are grateful for your thorough response and suggestions for strengthening our analysis, as well as your questions regarding the differences between vortex-splitting and vortex-displacement events.  
+The idea of differentiating between splits and displacements was something we already considered in the preparation of this paper because, as you have pointed out, the zonal structure of these two types of events as they evolve is very different, as are the associated surface anomalies following each type of event seem to be quite different.
+
+Nevertheless, we have omitted the differences between splitting and displacement events from our manuscript for the following reasons:
+\begin{enumerate}
+  \item The differences between split and displacement events outlined above mainky concern the morophology of the stratospheric polar vortex itself.  However, our analysis showed that length-of-day and polar motion changes are not due to the structure of the polar vortex during SSWs, but rather due to the tropical wind anomalies and Northern Hemisphere surface pressure anomalies  that are associated with SSWs (the former impacting length-of-day and the latter polar motion).  Here the differences between splits and displacements are much less clear.
+ \item Splitting the analysis into splits and displacements further decreases our already small sample size.  
+ %\item There is not a clear consensus in the literature about which events qualify as ``vortex splits'' and ``vortex displacements'', and how to define them.  For example,  25 percent of the SSW events classified as split (or displacement) by \citet{Charlton2007} are classified differently in the later study of \cite{Mitchell2012}.  In our view, this makes it difficult to draw reliable conclusions on the differences between these two types of events in terms of the observed global angular momentum.
+ \item We do not see a clear difference in either the polar motion or length-of-day signatures between split and displacement events.   This last point is illustrated in figures \ref{fig:PM2_by_Type} - \ref{fig:LOD_composited_by_Type} and decribed more thoroughly below.  
+\end{enumerate}
+
+Figure \ref{fig:PM2_by_Type} shows the observed $\chi_2$ for the individual SSW events studied in our paper, which were selected from the joint ERA-40/ERA-Interim dataset using the criterion of \citet{Charlton2007}.
+Events are color coded according to whether they are split or displacement events, and events that were not classified in \citet{Charlton2007} (or happened after that study was published) are left in gray.
+Some events show a clear negative anomaly in $\chi_2$ prior to the SSW onset, and some don't show anything -- but it's impossible to say that the difference is due to whether the events are vortex splits or displacements.  
+%
+In Figure \ref{fig:PM2_composited_by_Type} we have plotted $\chi_2$ observations, composited over splitting, displacement, and unclassified events, again using the classification of \citet{Charlton2007}.
+We can see that in all three categories, the mean $\chi_2$ signal shows a negative anomaly about 3 weeks before the central date, and while the signal does look weaker in the composite over splitting events, to the extent that a $\chi_2$ minimum indicates an approaching SSW, we there is no clear difference between splits and displacements.
+
+
+As pointed out in our manuscript (Secion 4.2), the observed minimum in $\chi_2$ is due to the combined effect of a high pressure anomaly over Eurasia / the North Atlantic, and a low pressure anomaly over western North America / the northeastern Pacific, both of which constitute negative contributions to the excitation function $\chi_2$. 
+\citet{Mitchell2012} point out that the North American low pressure anomaly is more closely associated with vortex-displacement events and the Eurasian high pressure anomaly with vortex-splitting events.
+Presumably, the fact that both surface pressure anomalies result in negative $\chi_2$ is what makes it difficult to distinguish between splits and displacements in terms of the observed polar motion anomaly.
+We have added a statement to this effect at the end of Section 4.2.
+
+Finally, it is worth noting that if we were to instead use the split-displacement criterion of \citet{Mitchell2012} [Fig. \ref{fig:PM2_composited_by_Type}, bottom row), the $\chi_2$ minimum is no longer seen in in the mean over either vortex splitting or displacement events.
+This is likely due to the fact that the SSW selection algorithm used by \citet{Mitchell2012} produced a fairly different set of SSW events than that produced usung the \citet{Charlton2007} criterion.  
+Of course the differences between the two lists are interesting in their own right, but beyond the focus of this paper.  
+It would certainly be interesting to visit this when a larger set of observed events is available, of course, but for now the separation of composites by event type does not seem bring much clarity to our analysis.
+
+
+We also found no clear difference between splitting and displacement events in terms of the observed length-of-day.   
+We found  that the LOD decline observed in some SSW events it largely due to anomalous winds induced in the tropical troposphere, and only in part by the wind reversal at the poles.
+In either case LOD changes are excited by zonal mean wind changes; this makes it difficult to predict whether this signal should be stronger in splits or displacements.
+\vspace{0.5cm}
+
+
+
+\begin{figure}
+  \noindent
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/PM2_by_split_vs_disp.pdf}
+   \caption{Observed polar motion angle 2 (in terms of equivalent excitation function $\chi_2$) for the SSW events between 1963 and 2010, color coded by whether the event constituted a vortex split or displacement. Events are classified according to \cite{Charlton2007}.}
+   \label{fig:PM2_by_Type}
+ \end{figure}
+
+\begin{figure}
+  \noindent
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/PM2_composited_by_split_vs_disp.pdf}
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/PM2_composited_by_split_vs_disp_mitchell.pdf}
+   \caption{Observed polar motion angle 2 (in terms of equivalent excitation function $\chi_2$) for the SSW events between 1963 and 2010, composited over vortex splits, displacement, and undefined events. In the top row, events are classified according to \cite{Charlton2007}.  In the bottom row, events are classified according to \citet{Mitchell2012}.}
+   \label{fig:PM2_composited_by_Type}
+ \end{figure}
+
+ \begin{figure}
+  \noindent
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/LOD_by_split_vs_disp.pdf}
+   \caption{Observed $\Delta$LOD for the SSW events between 1963 and 2010, color coded by whether the event constituted a vortex split or displacement. Events are classified according to \cite{Charlton2007}.}
+   \label{fig:LOD_by_Type}
+ \end{figure}
+ 
+\begin{figure}
+  \noindent
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/LOD_composited_by_split_vs_disp.pdf}
+   \caption{Observed length-of-day anomalies for the SSW events between 1963 and 2010, composited over vortex splits, displacement, and undefined events, classified according to \cite{Charlton2007}.}
+   \label{fig:LOD_composited_by_Type}
+ \end{figure}
+ 
+
+
+
+
+
+
+
+\textcolor{reviewer}{Lines 43-45 – I found this figure to be far from convincing. In fact, when I look at this
+figure the ‘event’ that stands out actually occurs in early to mid-December. I guess the
+plot of p2 has the cleanest signature, but it is very hard for me to see “dramatic” changes
+around the central date for either p1 or LOD. Can you better justify your statement here?}
+\vspace{0.5cm}
+
+We have revised the description of this figure to point out what can actually be seen in the image.
+Note also that the curves for the polar motion components have changed as we have removed the 10-day smoothing from these curves (see Section \ref{sec:overview}).
+Nevertheless deep negative values of $\chi_2$ can still be seen.
+\vspace{0.5cm}
+
+
+
+\textcolor{reviewer}{Section 2.3 – How did you create your climatologies? Did you simply use all of the
+available data? It may be worth considering building your climatology only using winters
+that did not have a SSW. I say this because if you use 53 winters of data to build your
+climatology and there were 34 SSWs during that time, then almost 2/3 of your
+climatology time series includes events!! I realize that including all winters in the
+climatology is the ‘standard’ method, but that does not mean that it is the most careful
+and physically insightful way to do so. What you really want to do is compare SSWs
+periods to quiescent periods. I would suggest giving this some thought.}
+\vspace{0.5cm}
+
+The climatolgoies are computed by averaging over the period 1958 to 2010.  
+Computing the climatology over only quiescent winters is an interesting idea, but  leaves us with only 23 years (rather than 52 years) over which to compute the climatology.  
+Moreover, many winters that we would consider quiescent still contain minor warmings, or even major warmings according to the criteria of \citet{Mitchell2012}.  
+In our view, this would complicate the analysis too much.  
+Thus, for the sake of simplicity, we have decided to maintain the anomalies as they are.
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Line 185 – What do you mean by ‘typical’? Perhaps it is typical for the composite of both
+splits and displacements, but it is not typical for the individual types of SSWs. If you
+want to provide meaningful insight into how the Earth’s angular momentum budget
+varies in the prewarming stage, then you need to be able to provide physical insight. And
+this figure does not accomplish that.}
+\vspace{0.5cm}
+
+The meaning of "typical" was pointed out in the following sentence, i.e. that major warmings have a common tendency to propagate downward  after the stratospheric wind reversal, that the temperature anomaly tends to precede the wind anomaly, and that the effects in the tropopsphere can last up to 2 months.  The purpose of this figure was not to explain the observed atmospheric angular momentum anomalies (this is done in later figures), but rather to show how the 2009 event (shown in Fig. 1) fits into the context of SSWs in general, as well as to provide a visual basis for the idea of the "central date".  We contend that the figure accomplishes this purpose and have changed its description in the text accordingly. 
+\vspace{0.5cm}
+
+
+
+\textcolor{reviewer}{Line 186 – You state that warm temperature anomalies appear in the upper stratosphere
+50 days before the central warming date. I don’t see this in your plot at all. In fact it
+appears as though there is a cold anomaly in the 50 days prior to the central warming
+date. Again, perhaps if you consider each warming type separately, then you will have a
+better idea of what you are trying to isolate and interpret.}
+\vspace{0.5cm}
+
+Something went wrong when this text was written -- we have made the correction.
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Lines 202-204 – Doesn’t this mean that split and displacement SSWs will excite the
+AAM functions in a profoundly different manner?}
+\vspace{0.5cm}
+
+This was also our initial question but, as shown above, we did not find strong differences between splits and displacements here.  
+\vspace{0.5cm}
+
+
+\textcolor{reviewer}{Lines 227-228 – You state here that p1 has small fluctuations yet in the previous
+paragraph you state that it has large fluctuations. I think this whole little section (Lines
+224-229) needs to be clarified. Explain better what you are referring to.}
+\vspace{0.5cm}
+
+We have edited the text to make everything more clear and remove ambiguity.
+\vspace{0.5cm}
+
+We have overhauled this section to clarify the inverted barometer effect.  
+The polar motion signals here come from the surface pressure signals preceding SSWs rather than the position of the polar vortex, so the only difference between splits and displacements that we would expect to see here should be due to their preconditioning stages.  
+As shown above, these don't seem to have a statistically significant difference in terms of polar motion excitation.  
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Lines 232-237 – It would be nice to see a bit more explanation here. It doesn’t
+necessarily need to be extensive, but a bit more physical insight would greatly help the
+reader understand the physics of the ‘ocean damping’ effect. Moreover, this is another
+location where I would guess that there is a difference between displacements versus
+splits because of where the vortex (or vortices) is pushed to during a warming. For
+example, the daughter vortices in a split warming are usually located over North America
+and India (i.e. non-ocean basin areas), whereas a displaced vortex usually is located over
+the North Atlantic. I would think this difference would produce a different ocean
+damping effect.}
+\vspace{0.5cm}
+
+We have revised the section explaining the inverted barometer effect of the ocean to make it more clear.  
+The differences between vortex splits and displacements are not discussed here since the inverted barometer effect mostly concerns the precursor surface pressure pattern of the warmings. 
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Section 4.2 – The title of this section “Why do polar...” is barely addressed. I think a bit
+of additional discussion of the physics is in order here. As it is currently written, you are
+more or less just documenting how the excitation functions are different, and there is very
+little (if any) discussion for why this might be and how it relates to the SSW vortex
+evolution.}
+\vspace{0.5cm}
+
+We have rewritten this section to make it more clear that the observed polar motion anomalies are due to the average surface pressure pattern associated with the period preceding SSW events. 
+We have now omitted the subplots showing $\chi_1$ (since the low variation in this parameter was already discussed in Section 4.1), which focuses the discussion on $\chi_2$.   
+Together with the discussion in the final section of the paper, we now hope to make clear that the observed polar motion signal is a consequence of the surface footprint of SSWs, rather than the angular momentum of the vortex itself, and that this signal can vary greatly between individual events.  
+\vspace{0.5cm}
+
+
+\textcolor{reviewer}{Section 4.2 discussion of Figure 4 – Why do Figures 4a,b show a wave 2 pattern but
+Figures c-f show a wave 1 pattern? Can you offer a bit of explanation for why this makes
+sense and what insight might be gained from this?}
+\vspace{0.5cm}
+
+The top row of plots in this figure shows anomalies with respect to the zonal mean, whereas the second row shows anomalies with respect to the daily climatology only.
+In order to draw a more clear connection between the zonal wave propagation and the surface pressure anomalies, we have changed the first row of plots to instead show the full zonal mean geopotential field, rather than anomalies from the zonal mean.
+
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Lines 273-277 – You point out here that there are notable LOD differences between the
+Feb. 1979 and Jan. 2009 SSWs and the January 1987 SSW. Perhaps you are noting
+difference because the 1979 and 2009 warmings were splits, while the 1987 was displacement?}
+\vspace{0.5cm}
+
+This is, of course, a possibility, but we have found that, given the available data, it is impossible to tell whether the tropical wind anomalies that cause the observed $\Delta$LOD decline differ for split and displacement events.
+To illustrate this simply, Figure \ref{fig:LOD_by_Type} shows the $\Delta$LOD  for all SSW events in our analysis, color coded by whether \citet{Charlton2007} classify them as vortex splits or displacements.
+As in the case for $\chi_2$ (Fig. \ref{fig:PM2_by_Type}, it is difficult to see a connection between the observed $\Delta$LOD and the type of SSW event.
+Compositing over splits and displacements separately (Fig.~\ref{fig:LOD_composited_by_Type} showes an average $\Delta$LOD decline in both types of events, but with even lower statistical significance than we have when we combine all events (e.g. bottom row of Fig. \ref{fig:summary_plotstack_datasets}).
+We have added a statement to the conclusion section where we point out that possible differences between vortex splits and displacements could emerge with more data.
+
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Line 224 – You state here that you consider 22 SSWs, but your figure caption states that
+you are considering 34 SSWs. (This same problem is see when comparing line 241 and
+the caption for figure 4).}
+\vspace{0.5cm}
+
+Only the ERA-Interim events were considered here; we have corrected both figure captions.
+\vspace{0.5cm}
+
+\textcolor{reviewer}{Figure 3 – You use the acronym AEF in the figure title, but you do not define that
+anywhere. I am guessing that it stands for atmospheric excitation functions, but all
+acronyms and variables need to be defined somewhere in the text or figure captions.}
+\vspace{0.5cm}
+
+We have revised the title of the figure to make more sense.
+
+%-------------------------------------------------------------------------
+\section{Additional Changes}
+\label{sec:overview}
+
+We have made the following changes to the paper in addition to what was suggested by the reviewers:
+\begin{enumerate}
+ \item We have simplified our analysis by removing the distinction between SSW events that happen during the easterly and westerly phases of the QBO, while also removing the QBO signal from our plots of anomalies (in Earth rotation parameters as well as meteorological fields) about the SSW central dates. The QBO signal was removed simply by subtracting the mean anomaly for each quantity over the 141 days around the central date.  The resulting anomalies in the length-of-day is shown in Fig. \ref{fig:LOD_by_QBO}.  Here it is clear that there is no clear difference in the Earth rotation signal between QBO-E and QBO-W SSW events.  Thus, the dependence on QBO phase that was shown  in our original Fig. 5 is not really a robust result once the effect of the QBO on LOD itself is removed.  We have therefore removed the distinction by QBO phase in Figures 5-6 of the revised manuscript, which also simplifies the analysis.
+ \item We have clarified our discussion of the polar motion and equatorial angular momentum excitation functions, now pointing out that the excitation functions represent a rotation of the reference frame.  This means that when we talk about a polar motion signal preceding SSWs, we are actually talking about a signal in the angular momentum component  (wheras in the actual polar motion parameters, the signal is mixed between $p_1$ and $p_2$)  We have denoted the observations of the (geodetically observed) angular momentum components as $\chi_1^{\text{GEO}}$ and  $\chi_2^{\text{GEO}}$. 
+ %
+\item It was noticed during the revisions that in the rotation of the reference frame from polar motion observations to equatorial AAM components (eqns. 1-2 in the revised manuscript), the derivatives of the polar motion components were computed with the addition of a 10-day smoother.  This smoothing has been removed in the revised analysis.  As a result, the $\chi_1$ and $\chi_2$ plots for the 2009 warming event (Fig. 1c-d), and the $\chi_1$ and $\chi_2$ composites (Fig. 2c-d, Fig. 3) are now considerably more jagged than in the original manuscript.  However, our original result, that $\chi_2$ often shows a strong negative anomaly due to SSW precursors, is unchanged.
+\end{enumerate}
+
+\begin{figure}
+  \noindent
+\includegraphics[width=\textwidth]{../Plots/SSW_AAM/LOD_all_events_byQBO.pdf}
+   \caption{Observed length-of-day anomalies for the SSW events between 1963 and 2010, color coded by whether the event happened during the Easterly or Westerly phase of the QBO. Events are classified according to the criterion in \cite{Hansen2013}.}
+   \label{fig:LOD_by_QBO}
+ \end{figure}
+
+\bibliography{ssw,nathan}
+
+
+\end{document}
+
+
+

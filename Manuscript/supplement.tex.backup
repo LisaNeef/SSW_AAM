@@ -1,0 +1,90 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Supplement to ``Stratospheric Sudden Warmings Impact Earth Rotation''}
+\author{Lisa Neef, Sophia Walther, Kunihiko Kodera, Katja Matthes}
+
+
+\usepackage{ucs}
+%\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+
+\begin{document}
+
+\maketitle
+
+The excitation of Earth rotation variations by atmospheric angular momentum is given by the following six excitation functions:
+\begin{eqnarray} 
+%
+% X1 pressure term
+\chi^{\text{M}}_1 &=&
+\frac{ -1.10R^4}{(g(C-A))}
+\int \int
+p_s \sin \phi \cos^2 \phi \cos \lambda
+\text{d}\lambda \text{d}\phi
+\label{eq:X1m}
+\\
+%X1 wind term
+\chi^{\text{W}}_1 &=&
+\frac{-1.61 R^3}{\Omega (C-A)g}
+\int \int \int
+(u \sin \phi \cos \phi \cos \lambda -
+v \cos \phi \sin \lambda)
+\text{d}\lambda \text{d}\phi \text{d}p
+\label{eq:X1w}
+\\
+% X2 pressure term
+\chi^{\text{M}}_2 &=&
+\frac{ -1.10 R^4}{(g(C-A))}
+\int \int
+p_s \sin \phi \cos^2 \phi \sin \lambda
+\text{d}\lambda \text{d}\phi
+\label{eq:X2m}
+\\
+%X2 wind term
+\chi^{\text{W}}_2 &=&
+\frac{-1.61 R^3}{\Omega (C-A)g}
+\int \int \int
+(u \sin \phi \cos \phi \sin \lambda +
+v \cos \phi \cos \lambda)
+\text{d}\lambda \text{d}\phi \text{d}p
+\label{eq:X2w}
+\\
+%X3 pressure term
+\chi^{\text{M}}_3 &=&
+\frac{0.748 R^4}{C_m g}
+\int \int
+p_s \cos^3 \phi
+\text{d}\lambda \text{d}\phi
+\label{eq:X3m}
+\\
+%X3 wind term
+\chi^{\text{W}}_3 &=&
+\frac{0.997 R^3}{C_m \Omega g}
+\int \int \int
+u \cos^2 \phi
+\text{d}\lambda \text{d}\phi \text{d}p.
+\label{eq:X3w}
+%
+\end{eqnarray}
+
+
+The trigonometric weighting functions that are applied to the individual wind and pressure fields are illustrated graphically in Figure \ref{fig:TF}.
+
+
+\begin{figure} 
+\includegraphics[width=\textwidth]{../Plots/AAM/TF_U.png}
+\includegraphics[width=\textwidth]{../Plots/AAM/TF_V.png}
+\includegraphics[width=\textwidth]{../Plots/AAM/TF_PS.png}
+   \caption{The transfer functions that weight zonal wind (top row), meridional wind (center), and surface pressure in the AAM excitation functions.}
+   \label{fig:TF}
+ \end{figure}
+
+
+
+\end{document}

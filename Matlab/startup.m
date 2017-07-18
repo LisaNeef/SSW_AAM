@@ -1,0 +1,8 @@
+addpath('/pf/b/b325004/Matlab/AM/')
+addpath('/pf/b/b325004/Matlab/DART/')
+addpath('/pf/b/b325004/Matlab/utilities/')
+addpath('/pf/b/b325004/Matlab/netcdf/mexcdf/snctools/')
+addpath('/pf/b/b325004/Matlab/netcdf/mexcdf/mexnc/','-BEGIN')
+addpath('/pf/b/b325004/DART/matlab')
+addpath('/pf/b/b325004/Matlab/Colors/')
+%addpath('/pf/b/b325004/Matlab/Sophia/')
